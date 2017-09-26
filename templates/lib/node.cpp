@@ -191,7 +191,7 @@ QStringList AbstractNodeFactory::smartSplit( const QString &str ) const
 #if defined(Q_CC_MSVC)
 // MSVC doesn't like static string concatenations like L"foo" "bar", as
 // results from QStringLiteral, so use QLatinString here instead.
-#define STRING_LITERAL QLatinString
+#define STRING_LITERAL QLatin1String
 #else
 #define STRING_LITERAL QStringLiteral
 #endif
